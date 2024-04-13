@@ -4,7 +4,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* overflow-x: hidden; */
     /* overflow-y: auto; */
     
 }
@@ -30,17 +29,20 @@
     background: linear-gradient(90deg, rgba(255, 255, 171, 1) 0%, rgba(255, 161, 132, 1) 100%);
     justify-content: center;
     align-items: center;
+    overflow-x: hidden;
 }
 .container{
-    width: 450px;
-    height: 500px;
+    width: 30%;
+    min-width: 450px;
+    min-height: 500px;
 }
 .heading{
     line-height: 1.2;   
-    font-size:50px;
+    font-size:3.22rem;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     opacity: 75%;
     padding: 0 auto;
+    text-align: center;
 }
 
 .display_section{
