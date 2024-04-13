@@ -1,0 +1,220 @@
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    /* overflow-y: auto; */
+    
+}
+
+/* :root{
+    --dk-violet : hsl(268,75%,9%);
+    --lt-violet : hsl(268,47%,21%);
+    --lt-violet2 : hsl(268,89%,26%);
+    --vb-violet: hsl(285,91%,52%);
+    --vb-violet2: hsl(290,70%,36%);
+    --vb-yellow: hsl(52,100%,62%);
+    --pl-white: hsl(0,0,100%);
+    --vb-cyan: hsl(176,100%,44%);
+    --vb-cyan2:hsl(177,92%,70%);
+    --dk-text: hsl(198,20%,13%);
+} */
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(90deg, rgba(255, 255, 171, 1) 0%, rgba(255, 161, 132, 1) 100%);
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 450px;
+    height: 500px;
+}
+.heading{
+    line-height: 1.2;   
+    font-size:50px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    opacity: 75%;
+    padding: 0 auto;
+}
+
+.display_section{
+    position: relative;
+    background-color: white;
+    border-radius: 5px;
+    width: 70%;
+    height: 40px;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 8px;
+    margin-top: 13px;
+    border-bottom: 4px solid rgb(210, 209, 209);
+}
+
+.display{
+    border: none;
+    width: 80%;
+    padding-left:10px;
+    font-size: 1rem;
+}
+
+.display::placeholder{
+    color:grey;
+    opacity: 0.7;
+}
+
+.display_section button{
+    height: 25px;
+    width: 10%;
+    position: absolute;
+    top: 15%;
+    right: 2%;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    opacity: 80%;
+}
+
+.display:focus{
+    border: none;
+    outline: none;
+}
+
+.selectors{
+    position: relative;
+    background-color: white;
+    padding: 18px;
+    border-radius: 10px;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 10px; 
+    border-bottom: 4px solid #d0d0d0;
+    gap: 0 20px;
+}   
+
+.Pswd_len{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.4rem;
+}
+
+.indicator_sec{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 9px;
+    padding: 4px;
+}
+
+.indicator_sec p{
+    font-size: 1.4rem;
+}
+.indicator_sec div{
+    height: 15px;
+    width: 15px;
+    border-radius:50% ;
+}
+
+.generate_btn{
+    width:100%;
+    margin-top: 7px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(255, 219, 13);
+    letter-spacing: 0.05rem;
+    font-size: 18px;
+    height: 36px;
+    font-weight: 600;
+    box-shadow: 0px 4px 4px rgb(193, 192, 192);
+    padding-top: 7px;
+}
+
+.check{
+    display: flex;
+    gap: 6px;
+    margin: 4px 8px;
+    font-size: 1.2rem;
+    align-items: center;
+}
+
+.check input{
+    cursor: pointer;
+    appearance: none;
+    height: 15px;
+    width: 15px;
+    border: 2px solid rgb(0, 165, 0);
+    border-radius: 2px;
+}
+
+.check label{
+    cursor: pointer;
+}
+
+.check input:checked{
+    background-color: rgb(0, 165, 0);
+}
+
+.check input:checked::before{
+    content:"✓";
+    color: rgb(255, 217, 0);
+    position: absolute;
+    transform: translateY(-30%) translateX(-10%);
+    font-size: 1.2rem;
+    font-weight:bolder;
+}
+
+.slider{
+    appearance: none;
+    width: 100%;
+    height: 0.85rem;
+    margin:20px 0px;
+    border: none;
+    border-radius:20px;
+    background-color: rgb(114, 38, 126);
+    background-image: linear-gradient(orange,orange);
+    background-repeat: no-repeat;
+}
+
+.slider::-webkit-slider-thumb{
+    appearance: none;
+    width: 1.8rem;
+    height: 1.8rem;
+    background-color: rgb(255, 193, 111);
+    border-radius: 50%;
+}
+
+.slider::-webkit-slider-thumb:hover{
+    background-color: black;
+    border: 2px solid rgb(239, 181, 72);
+    box-shadow: 0px 0px 6px 3px black;
+    transition: all 100ms;
+}
+
+.slider:focus{
+    border: 3px solid rgb(239, 181, 72);
+}
+
+.copy_msg{
+    position: absolute;
+    top: -25px;
+    right: -15px;
+    scale: 0;
+    padding: 4px 8px;
+    color: white;
+    font-weight: bold;
+    transition: all 100ms;
+}
+
+.active{
+    border-radius: 10px;
+    background-color: blueviolet;
+    scale: 1;
+    transition: all 100ms;
+}
